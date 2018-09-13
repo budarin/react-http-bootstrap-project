@@ -13,7 +13,7 @@ function renderApp() {
 
 renderApp();
 
-if (process.env.__DEV__) {
+if (__DEV__) {
     if (module.hot) {
         module.hot.accept('./App', () => {
             renderApp();

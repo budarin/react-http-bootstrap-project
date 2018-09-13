@@ -26,7 +26,7 @@ const config = {
 
     notify: false,
     globals: {
-        'process.env.__DEV__': true,
+        __DEV__: true,
     },
 };
 

@@ -28,7 +28,7 @@ function a(b: string): string {
     return b;
 }
 
-if (process.env.__DEV__) {
+if (__DEV__) {
     a('Hello!');
 }
 
