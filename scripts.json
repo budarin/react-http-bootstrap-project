@@ -1,0 +1,38 @@
+[
+    {
+        "name": "type-check",
+        "command": "npx tsc"
+    },
+    {
+        "name": "start",
+        "command": "webpack-dev-server --config ./config/webpack.config.babel.js",
+        "env": {
+            "NODE_ENV": "development"
+        }
+    },
+    {
+        "name": "test-watch",
+        "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify --notifyMode=failure",
+        "NODE_ENV": "test"
+    },
+    {
+        "name": "test",
+        "command": "jest --detectOpenHandles --no-cache --forceExit",
+        "NODE_ENV": "test"
+    },
+    {
+        "name": "clean",
+        "command": "rimraf ./.tmp && rimraf ./dist"
+    },
+    {
+        "name": "build",
+        "command": "prun clean && webpack --mode production --config ./config/webpack.config.prod.babel.js",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    },
+    {
+        "name": "upgrade",
+        "command": "npm-upgrade && npm install"
+    }
+]

@@ -1,0 +1,33 @@
+{
+    // prettier
+    "editor.formatOnSave": true,
+    "json.format.enable": true,
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+
+    // stylelint
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "prettier.stylelintIntegration": true,
+
+    // npm sripts
+    "npm.enableScriptExplorer": true,
+
+    // git
+    "git.autofetch": true,
+
+    "workbench.iconTheme": "vs-nomo-dark",
+    "editor.minimap.enabled": false,
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 1000,
+    "workbench.colorTheme": "Plastic",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.sideBar.location": "left",
+    "git.confirmSync": false,
+    "eslint.enable": false
+}
