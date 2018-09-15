@@ -88,7 +88,8 @@ const wpConfig = () => {
             }),
             new webpack.SourceMapDevToolPlugin({
                 columns: false,
-                filename: 'bundle.js.map',
+                filename: '[file].map',
+                publicPath: 'https://localhost:4430/',
             }),
             new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
         ],
