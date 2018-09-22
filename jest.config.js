@@ -22,7 +22,7 @@ const config = {
 
     collectCoverage: true,
     coverageDirectory: '../.tmp/coverage',
-    collectCoverageFrom: ['**/*.{ts,tsx}'],
+    collectCoverageFrom: ['**/*.{ts,tsx}', '!**/*.d.ts'],
 
     notify: false,
     globals: {
