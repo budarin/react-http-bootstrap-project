@@ -54,7 +54,7 @@ const wpConfig = () => {
                             loader: '@budarin/ts-css-loader',
                             options: {
                                 modules: true,
-                                usable: true,
+                                browser: true,
                                 server: true,
                                 camelCase: true,
                                 importLoaders: 1,
