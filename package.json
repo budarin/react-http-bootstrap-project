@@ -8,10 +8,15 @@
         "test-watch": "prun test-watch",
         "test": "prun test",
         "build": "prun build",
-        "precommit": "lint-staged",
         "upgrade": "prun upgrade"
     },
     "browserslist": "> 3%, not ie < 13, not dead",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "npm test"
+        }
+    },
     "lint-staged": {
         "*.{js,jsx,ts,tsx,json,css,md}": [
             "prettier --write",
@@ -61,11 +66,13 @@
         "copy-webpack-plugin": "^4.5.2",
         "css-loader": "^1.0.0",
         "enzyme": "^3.6.0",
+        "husky": "^1.0.0",
         "identity-obj-proxy": "^3.0.0",
         "image-size-loader": "^0.7.0",
         "jest": "^23.6.0",
         "jest-environment-node": "^23.4.0",
         "jest-puppeteer": "^3.4.0",
+        "lint-staged": "^7.3.0",
         "optimize-js-plugin": "0.0.4",
         "postcss": "^7.0.4",
         "postcss-loader": "^3.0.0",
