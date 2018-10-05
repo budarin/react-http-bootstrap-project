@@ -17,7 +17,7 @@ describe('Home', () => {
     jest.setTimeout(10000);
 
     beforeAll(async () => {
-        browser = await puppeteer.launch(launchProps);
+        browser = await puppeteer.launch({});
         const context = await browser.createIncognitoBrowserContext();
         page = await context.newPage();
         await page.goto('https://google.com/');

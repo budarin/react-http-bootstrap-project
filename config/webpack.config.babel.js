@@ -54,7 +54,7 @@ const wpConfig = () => {
                             loader: '@budarin/ts-css-loader',
                             options: {
                                 modules: true,
-                                usable: true,
+                                browser: true,
                                 server: true,
                                 camelCase: true,
                                 importLoaders: 1,
@@ -89,6 +89,7 @@ const wpConfig = () => {
             hot: true,
             inline: true,
             overlay: true,
+            compress: true,
             headers: {
                 'Access-Control-Allow-Origin': '*',
             },

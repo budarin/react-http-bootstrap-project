@@ -8,12 +8,17 @@
         "test-watch": "prun test-watch",
         "test": "prun test",
         "build": "prun build",
-        "upgrade": "prun upgrade",
-        "precommit": "lint-staged"
+        "upgrade": "prun upgrade"
     },
     "browserslist": "> 3%, not ie < 13, not dead",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "npm test"
+        }
+    },
     "lint-staged": {
-        "*.{js,json,css,md}": [
+        "*.{js,jsx,ts,tsx,json,css,md}": [
             "prettier --write",
             "git add"
         ]
