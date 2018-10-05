@@ -33,6 +33,6 @@
     },
     {
         "name": "upgrade",
-        "command": "npm-upgrade && npm install"
+        "command": "npm-upgrade && check-dependencies --install"
     }
 ]
