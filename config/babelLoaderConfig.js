@@ -19,12 +19,14 @@ module.exports = {
                             ? ['last 1 Chrome versions']
                             : 'last 1 version, ' + browserslist, // @babel/preset-env has own list of browsers other than others
                 },
+                exclude: ['transform-async-to-generator', 'transform-regenerator'],
             },
         ],
         '@babel/preset-react',
         '@babel/preset-typescript',
     ],
     plugins: [
+        ['module:fast-async', { spec: true }],
         '@babel/plugin-syntax-dynamic-import',
         '@babel/plugin-proposal-class-properties',
         ['babel-plugin-lodash', { id: ['lodash', 'recompose'] }],

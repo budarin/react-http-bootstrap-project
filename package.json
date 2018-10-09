@@ -67,6 +67,7 @@
         "copy-webpack-plugin": "^4.5.2",
         "css-loader": "^1.0.0",
         "enzyme": "^3.7.0",
+        "fast-async": "^6.3.8",
         "identity-obj-proxy": "^3.0.0",
         "image-size-loader": "^0.7.0",
         "jest": "^23.6.0",
