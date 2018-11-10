@@ -8,6 +8,7 @@
         "test-watch": "prun test-watch",
         "test": "prun test",
         "build": "prun build",
+        "audit-fix": "prun audit-fix",
         "upgrade": "prun upgrade"
     },
     "browserslist": "> 3%, not ie < 13, not dead",
