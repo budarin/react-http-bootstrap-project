@@ -66,7 +66,7 @@
         "postcss": "^7.0.5",
         "postcss-loader": "^3.0.0",
         "postcss-preset-env": "^6.4.0",
-        "prettier": "^1.15.1",
+        "prettier": "^1.15.2",
         "pretty-quick": "^1.8.0",
         "prun": "^1.0.1",
         "puppeteer": "^1.10.0",
