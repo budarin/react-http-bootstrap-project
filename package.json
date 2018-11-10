@@ -11,12 +11,6 @@
         "upgrade": "prun upgrade"
     },
     "browserslist": "> 3%, not ie < 13, not dead",
-    "lint-staged": {
-        "*.{js,jsx,ts,tsx,json,css,md}": [
-            "prettier --write",
-            "git add"
-        ]
-    },
     "keywords": [
         "bootstrap",
         "react",
@@ -68,12 +62,12 @@
         "jest": "^23.6.0",
         "jest-environment-node": "^23.4.0",
         "jest-puppeteer": "^3.5.0",
-        "lint-staged": "^8.0.4",
         "optimize-js-plugin": "0.0.4",
         "postcss": "^7.0.5",
         "postcss-loader": "^3.0.0",
         "postcss-preset-env": "^6.4.0",
         "prettier": "^1.15.1",
+        "pretty-quick": "^1.8.0",
         "prun": "^1.0.1",
         "puppeteer": "^1.10.0",
         "react-test-renderer": "^16.6.1",
